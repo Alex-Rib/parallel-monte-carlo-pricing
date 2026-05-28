@@ -3,16 +3,31 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.egg
 *.egg-info/
+build/
+dist/
 
-# Virtual envs et dépendances locales
+# Virtual envs and local dependencies
 venv/
-.env
 .venv/
+.env
+.conda/
 pip-wheel-metadata/
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# IDE / editor
+.vscode/
+.idea/
 
 # macOS
 .DS_Store
@@ -21,7 +36,10 @@ Icon?
 .Spotlight-V100
 .Trashes
 
-# résultats générés
+# Logs
+*.log
+
+# Generated outputs
 data/
 results/
 outputs/
